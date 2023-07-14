@@ -1,0 +1,23 @@
+.header-links{
+    position: relative;
+}
+.header-links:hover{
+    color: white;
+}
+.header-links:after {
+    content: "";
+    position: absolute;
+    background-color: #3fd054;
+    height: 3px;
+    width: 0;
+    left: 0px;
+    bottom: 0px;
+    transition: 0.3s;
+}
+.header-links.active:after{
+    width: 100%;
+}
+
+.header-links:hover:after {
+    width: 100%;
+}
